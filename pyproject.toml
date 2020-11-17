@@ -6,7 +6,7 @@ authors = ["Thejesh P R"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7.7"
 fastapi = "^0.61.2"
 requests = "^2.25.0"
 

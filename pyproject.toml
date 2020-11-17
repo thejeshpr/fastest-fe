@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastest"
+version = "0.1.0"
+description = "FastAPI Explore"
+authors = ["Thejesh P R"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.61.2"
+requests = "^2.25.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^20.8b1", allow-prereleases = true}
+pytest = "^6.1.2"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

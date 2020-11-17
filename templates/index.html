@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row">   
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">IP Details</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Fetch IP details of given IP</h6>
+            <hr/>
+
+            <form class="form-inline">
+              <label class="sr-only" for="txt-ip">Name</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="txt-ip" placeholder="123.23.44.57" name="ip" {% if ip %}
+                value="{{ ip }}"
+              {% endif %} required>
+              <button type="submit" class="btn btn-primary mb-2">Check</button>
+            </form>
+
+            <code>
+            {% for key, val in data.items() %}
+              {{ key }}: {{ val }}<br/>
+            {% endfor %}
+            </code>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock %}

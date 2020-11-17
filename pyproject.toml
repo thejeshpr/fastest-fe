@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.7.7"
 fastapi = "^0.61.2"
 requests = "^2.25.0"
+Jinja2 = "^2.11.2"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^20.8b1", allow-prereleases = true}

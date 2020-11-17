@@ -1,7 +1,7 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
 # set path to our python api file
-ENV MODULE_NAME="fastest.app"
+ENV MODULE_NAME="fastest_fe.app"
 
 # copy contents of project into docker
 COPY ./ /app
